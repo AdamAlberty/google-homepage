@@ -80,9 +80,12 @@ main {
   display: flex;
   align-items: center;
   margin: 1.5rem auto;
-  max-width: 580px;
+  max-width: 500px;
   border-radius: 100px;
   border: 1px solid #dfe1e5;
+}
+.input-box:hover {
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
 }
 .input-box input {
   flex: 1;
@@ -101,6 +104,7 @@ main {
 .mic-svg {
   width: 24px;
   margin-right: 1rem;
+  cursor: pointer;
 }
 
 .control-buttons {
