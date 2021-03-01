@@ -1,1 +1,3 @@
-The Odin Project project from foundation course.
+# Google Homepage UI 
+* Project from The Odin Project
+* Used flexbox for layout
