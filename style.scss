@@ -25,68 +25,36 @@ header {
   font-size: .8rem;
 }
 
-nav {
+// Search top section
+.search-top {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-nav a {
-  padding-left: 1rem;
-  &:first-child {
-    padding-left: 0;
-  }
+.google-logo {
+  height: 30px;
+  margin-right: 50px;
 }
 
-nav .sign-in {
-  background-color: #4586F5;
-  color: white;
-
-  font-weight: bold;
-  cursor: default;
-  border-radius: .15rem;
-
-  padding: .5rem .7rem;
-  margin-left: 1rem;
-
-  &:hover { text-decoration: none;}
-}
-
-.nav-right, .nav-left {
+.grid-avatar {
   display: flex;
+  margin-left: auto;
+  justify-content: flex-end;
   align-items: center;
 }
 
-.squares {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  gap: 2px;
-
-  &:hover div {
-    opacity: 1;
-  }
-
-  div {
-    width: 4px;
-    height: 4px;
-    opacity: .55;
-    background-color: #000;
-  }
+.avatar {
+  border-radius: 50%;
+  margin-left: 20px;
 }
 
-// Search Area
-main {
-  margin-top: 14vh;
-  text-align: center;
-}
+
 
 .input-box {
   display: flex;
   align-items: center;
-  margin: 1.5rem auto;
-  max-width: 500px;
+  width: 600px;
   
   border-radius: 100px;
   border: 1px solid #dfe1e5;
@@ -115,46 +83,85 @@ main {
   cursor: pointer;
 }
 
-.control-buttons {
-  margin-top: 2rem;
-  button {
-    background-color: #f2f2f2;
-    color: #5F6368;
-
-    padding: .7rem 1rem;
-
-    outline: none;
-    border: none;
-    border-radius: .2rem;
-    
-    &:hover {
-      cursor: pointer;
-      // Border wasn't working - I don't know why
-      box-shadow: 0px 0px 0px 1px #c6c6c6 inset;
-    }
-
-    &:first-child {
-      margin-right: .5rem;
-    }
+nav a {
+  padding-left: 1rem;
+  &:first-child {
+    padding-left: 0;
   }
 }
 
-footer {
-  position: absolute;
+.nav-right, .nav-left {
   display: flex;
-  justify-content: space-between;
-  width: 100%;
-  bottom: 0;
-  padding: .75rem 1.6875rem;
+  align-items: center;
+}
 
-  font-size: 0.9rem;
-  color: #5f6368;
-  background-color: #F2F2F2;
+.circle-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 2px;
 
-  border-top: 1px solid #e4e4e4;
+  &:hover div {
+    opacity: 1;
+  }
 
   div {
-    display: flex;
-    gap: 2rem;
+    width: 4px;
+    height: 4px;
+    opacity: .55;
+    border-radius: 50%;
+    background-color: #000;
+  }
+}
+
+// Search bottom
+.search-bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 580px;
+  margin-left: 150px;
+  margin-top: 1.5rem;
+}
+
+.nav-left {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-right {
+  display: flex;
+  gap: 1.5rem;
+}
+
+
+// Search results
+.search-results {
+  border-top: 1px solid #ebebeb;
+}
+
+.main-container {
+  margin-left: 180px;
+  width: 600px;
+}
+
+.search-result {
+  margin: 1rem 0;
+  font-size: 14px;
+
+  header {
+    padding: unset;
+
+  }
+  main {
+    color: #1a0dab;
+    font-size: 20px;
+    margin: .5rem 0;
+  }
+  footer {
+    span {
+      font-weight: bold;
+    }
   }
 }
