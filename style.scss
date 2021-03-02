@@ -200,6 +200,10 @@ nav a {
     color: #1a0dab;
     font-size: 20px;
     margin: .3rem 0;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
   }
   footer {
     span {
@@ -208,8 +212,11 @@ nav a {
   }
 }
 
+
+// People Ask section
 .people-ask {
   margin-top: 3rem;
+
   h3 {
     padding-bottom: .3rem;
     font-size: 20px;
@@ -217,15 +224,24 @@ nav a {
     color: #202124;
     border-bottom: 1px solid #ecedef;
   }
+
   ul {
     list-style: none;
     color: #202124;
+
     li {
       display: flex;
       align-items: center;
+      cursor: pointer;
 
+      margin: .1rem 0;
       padding: .3rem 0;
       border-bottom: 1px solid #ecedef;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
       p {
         font-size: 16px;
         flex: 1;
@@ -238,4 +254,19 @@ nav a {
   display: block;
   width: 24px;
   opacity: .5;
+}
+
+.paa-bottom {
+  display: flex;
+  align-items: center;
+  div {
+    height: 1px;
+    background-color: #dadce0;
+    flex: 1;
+  }
+  p {
+    font-size: 12px;
+    margin-left: .5rem;
+    color: #70757a;
+  }
 }

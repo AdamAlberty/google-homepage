@@ -189,6 +189,10 @@ nav a:first-child {
   color: #1a0dab;
   font-size: 20px;
   margin: 0.3rem 0;
+  cursor: pointer;
+}
+.search-result main:hover {
+  text-decoration: underline;
 }
 .search-result footer span {
   font-weight: bold;
@@ -211,8 +215,13 @@ nav a:first-child {
 .people-ask ul li {
   display: flex;
   align-items: center;
+  cursor: pointer;
+  margin: 0.1rem 0;
   padding: 0.3rem 0;
   border-bottom: 1px solid #ecedef;
+}
+.people-ask ul li:last-child {
+  border-bottom: none;
 }
 .people-ask ul li p {
   font-size: 16px;
@@ -223,6 +232,21 @@ nav a:first-child {
   display: block;
   width: 24px;
   opacity: 0.5;
+}
+
+.paa-bottom {
+  display: flex;
+  align-items: center;
+}
+.paa-bottom div {
+  height: 1px;
+  background-color: #dadce0;
+  flex: 1;
+}
+.paa-bottom p {
+  font-size: 12px;
+  margin-left: 0.5rem;
+  color: #70757a;
 }
 
 /*# sourceMappingURL=style.css.map */
