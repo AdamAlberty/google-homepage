@@ -22,7 +22,7 @@ body {
 }
 
 header {
-  padding: 1rem 1.5rem;
+  padding: 1.3rem 1.5rem;
   font-size: 0.8rem;
 }
 
@@ -131,19 +131,34 @@ nav a:first-child {
 .search-bottom {
   display: flex;
   justify-content: space-between;
-  width: 580px;
+  width: 650px;
   margin-left: 150px;
   margin-top: 1.5rem;
+  color: #5f6368;
 }
 
 .nav-left {
   display: flex;
   gap: 1.5rem;
 }
+.nav-left a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.nav-left a p {
+  margin-left: 0.3rem;
+}
+.nav-left a span {
+  fill: #5f6368;
+}
 
 .nav-right {
   display: flex;
   gap: 1.5rem;
+}
+.nav-right a {
+  text-decoration: none;
 }
 
 .search-results {
