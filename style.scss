@@ -21,7 +21,7 @@ body {
 }
 
 header {
-  padding: 1.3rem 1.5rem;
+  padding: 1.3rem 1.5rem 0 1.5rem;
   font-size: .8rem;
 }
 
@@ -91,6 +91,7 @@ nav a {
 .nav-right, .nav-left {
   display: flex;
   align-items: center;
+
 }
 
 .grid-avatar {
@@ -139,17 +140,22 @@ nav a {
   justify-content: space-between;
   width: 650px;
   margin-left: 150px;
-  margin-top: 1.5rem;
   color: #5f6368;
 }
 
 .nav-left {
   display: flex;
-  gap: 1.5rem;
+  gap: .3rem;
   a {
     display: flex;
     align-items: center;
     text-decoration: none;
+    padding: 25px 10px 13px 10px;
+
+    &:first-child {
+      color: #1a73e8;
+      border-bottom: 3px solid #1a73e8;
+    }
 
     p {
       margin-left: .3rem;
