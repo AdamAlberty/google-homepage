@@ -137,9 +137,17 @@ nav a:first-child {
   width: 600px;
 }
 
-.search-result {
-  margin: 1rem 0;
+.result-count {
+  margin-top: 0.8rem;
   font-size: 14px;
+  color: #70757a;
+}
+
+.search-result {
+  margin: 1.5rem 0 1rem 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #4d5156;
 }
 .search-result header {
   padding: unset;
@@ -147,10 +155,41 @@ nav a:first-child {
 .search-result main {
   color: #1a0dab;
   font-size: 20px;
-  margin: 0.5rem 0;
+  margin: 0.3rem 0;
 }
 .search-result footer span {
   font-weight: bold;
+}
+
+.people-ask {
+  margin-top: 3rem;
+}
+.people-ask h3 {
+  padding-bottom: 0.3rem;
+  font-size: 20px;
+  font-weight: normal;
+  color: #202124;
+  border-bottom: 1px solid #ecedef;
+}
+.people-ask ul {
+  list-style: none;
+  color: #202124;
+}
+.people-ask ul li {
+  display: flex;
+  align-items: center;
+  padding: 0.3rem 0;
+  border-bottom: 1px solid #ecedef;
+}
+.people-ask ul li p {
+  font-size: 16px;
+  flex: 1;
+}
+
+.arrow-svg {
+  display: block;
+  width: 24px;
+  opacity: 0.5;
 }
 
 /*# sourceMappingURL=style.css.map */

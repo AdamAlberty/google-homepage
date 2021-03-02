@@ -146,9 +146,18 @@ nav a {
   width: 600px;
 }
 
-.search-result {
-  margin: 1rem 0;
+.result-count {
+  margin-top: .8rem;
   font-size: 14px;
+  color: #70757a;
+}
+
+.search-result {
+  margin: 1.5rem 0 1rem 0;
+  font-size: 14px;
+  line-height: 1.5;
+
+  color: #4d5156;
 
   header {
     padding: unset;
@@ -157,11 +166,43 @@ nav a {
   main {
     color: #1a0dab;
     font-size: 20px;
-    margin: .5rem 0;
+    margin: .3rem 0;
   }
   footer {
     span {
       font-weight: bold;
     }
   }
+}
+
+.people-ask {
+  margin-top: 3rem;
+  h3 {
+    padding-bottom: .3rem;
+    font-size: 20px;
+    font-weight: normal;
+    color: #202124;
+    border-bottom: 1px solid #ecedef;
+  }
+  ul {
+    list-style: none;
+    color: #202124;
+    li {
+      display: flex;
+      align-items: center;
+
+      padding: .3rem 0;
+      border-bottom: 1px solid #ecedef;
+      p {
+        font-size: 16px;
+        flex: 1;
+      }
+    }
+  }
+}
+
+.arrow-svg {
+  display: block;
+  width: 24px;
+  opacity: .5;
 }
